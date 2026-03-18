@@ -1,0 +1,50 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 300px 1fr;
+	grid-template-areas: 
+	"header header"
+	"sidebar content"
+	"footer footer";
+}
+
+.header {
+	grid-area: header;
+	padding:20px;
+	background-color: #1D2731;
+	color: #D9EAF7;
+	font-size: 1.7em;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+	padding:10px;
+	background-color: #328CC1;
+	color: #F4A261;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.sidebar {
+	color: #1D2731;
+	grid-area: sidebar;
+	padding:10px;
+	background-color: #D9EAF7;
+	overflow: auto;
+	font-family: 'Courier New', Courier, monospace;
+}
+
